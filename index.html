@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteer Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Volunteer Information Form</h1>
+        <form action="submit_form.php" method="post">
+            <label for="organization">Organization You Represent:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="contact">Contact Information:</label>
+            <input type="email" id="contact" name="contact" required>
+
+            <label for="skill-gap">Skill Gap You Are Seeking to Fill:</label>
+            <textarea id="skill-gap" name="skill-gap" rows="4" required></textarea>
+
+            <label for="expectations">What Would You Hope for the Volunteer to Fulfill for You:</label>
+            <textarea id="expectations" name="expectations" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
